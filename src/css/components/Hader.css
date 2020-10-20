@@ -1,0 +1,118 @@
+#header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  height: 60px;
+  /* background-color: #315a60; */
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  padding-left: 285px;
+  padding-right: 15px;
+}
+#back-and-forward-container {
+  width: 100%;
+  display: flex;
+}
+#back-button-circle,
+#forward-button-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#back-button-circle i,
+#forward-button-circle i {
+  color: #e1e1e1;
+}
+#user-avatar-container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+#user-avatar-container {
+  /*	width: 160px;*/
+  height: 30px;
+  border-radius: 20px;
+  background-color: #050505;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 10px;
+}
+#user-avatar-container span {
+  margin-right: 10px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+#serch-box-container {
+  width: 45%;
+  height: 40px;
+  border-radius: 32px;
+  background-color: #ffffff;
+}
+
+#hader-search-box {
+  width: 40%;
+  height: 40px;
+  background-color: #ffffff;
+  min-width: 200px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#hader-search-box input {
+  height: 100%;
+  width: 98%;
+  border: none;
+  padding: 0px 10px;
+  outline-width: 0px;
+}
+#hader-search-box i {
+  margin-left: 7px;
+}
+
+#hader-login-button a {
+  display: block;
+  width: 120px;
+  height: 37px;
+  margin-right: 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  font-weight: 600;
+}
+#hader-login-button a:hover {
+  transform: scale(1.03);
+}
+#account-option-continer {
+  width: 170px;
+
+  background-color: #282828;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  padding: 5px;
+}
+#account-option-continer .menue {
+  color: #b3b3b3;
+  padding: 7px;
+}
+#account-option-continer .menue:hover {
+  background-color: #3e3e3e;
+  cursor: pointer;
+  color: #ffffff;
+}

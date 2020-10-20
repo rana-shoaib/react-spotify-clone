@@ -1,0 +1,54 @@
+#single-song-container,
+#single-song-container-active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+#single-song-container:hover,
+#single-song-container-active {
+  background-color: #282828;
+}
+#single-song-container #right,
+#single-song-container #left,
+#single-song-container-active #right,
+#single-song-container-active #left {
+  display: flex;
+  align-items: center;
+}
+#single-song-container #left #song-play-button,
+#single-song-container-active #left #song-play-button {
+  display: none;
+}
+#single-song-container #left #song-details,
+#single-song-container-active #left #song-details {
+  margin-left: 15px;
+}
+#single-song-container #left #art,
+#single-song-container-active #left #art {
+  width: 50px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+#single-song-container #right #song-options,
+#single-song-container-active #right #song-options {
+  margin-right: 40px;
+  display: none;
+}
+
+#single-song-container:hover #right #song-options,
+#single-song-container-active #right #song-options {
+  display: block;
+}
+
+#single-song-container:hover #left #music-icon,
+#single-song-container-active #left #music-icon {
+  display: none;
+}
+
+#single-song-container:hover #left #song-play-button,
+#single-song-container-active #left #song-play-button {
+  display: block;
+}

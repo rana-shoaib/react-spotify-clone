@@ -1,0 +1,66 @@
+#create-album-poup {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+}
+#create-album-poup #inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#playlist-name-input-field {
+  width: 100vw;
+  height: 140px;
+  background-color: #282828;
+  margin-top: 10px;
+}
+#playlist-name-input-field #inner-input {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+#playlist-name-input-field #inner-input input {
+  width: 80%;
+  background-color: transparent;
+  height: 80px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 30px;
+}
+#create-album-poup #inner #button-conatiner {
+  margin-top: 20px;
+  display: flex;
+}
+#create-album-poup #inner #button-conatiner button {
+  width: 120px;
+  height: 37px;
+  border-radius: 32px;
+  margin-left: 30px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#create-album-poup #inner #button-conatiner button:hover {
+  transform: scale(1.1);
+}
+#create-album-poup #inner #button-conatiner button:focus {
+  outline: none;
+}
+#create-album-poup #inner #button-conatiner button:nth-child(2) {
+  background-color: #1db954;
+  border: none;
+}
+#create-album-poup #inner #button-conatiner button:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}

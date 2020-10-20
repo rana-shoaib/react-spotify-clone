@@ -1,0 +1,20 @@
+#genre-cart {
+  position: relative;
+  max-width: 230px;
+  height: 200px;
+  border-radius: 10px;
+  padding-top: 15px;
+  overflow: hidden;
+}
+#genre-cart h6 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+#genre-cart #genre-img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 130px;
+  transform: rotate(25deg) translate(18%, -2%);
+}

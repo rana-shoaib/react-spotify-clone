@@ -1,0 +1,19 @@
+#song-popup-options-conatiner {
+  position: absolute;
+  background-color: #282828;
+  z-index: 9999999999;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+}
+#song-popup-options-conatiner * {
+  font-size: 14px;
+}
+#song-popup-options-conatiner .option {
+  width: 100%;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+#song-popup-options-conatiner .option:hover {
+  background-color: #333333;
+}

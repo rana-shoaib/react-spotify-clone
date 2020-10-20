@@ -1,0 +1,9 @@
+#album-cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  justify-items: stretch;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 20px;
+  width: auto;
+}

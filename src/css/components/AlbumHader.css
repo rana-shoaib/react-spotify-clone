@@ -1,0 +1,74 @@
+#album-hader {
+  display: flex;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  /* background-color: #315a60; */
+}
+#controls {
+  margin-bottom: 15px;
+  /* background-color: #315a60; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(18, 18, 18));
+}
+#album-hader #left {
+  width: 25%;
+  min-width: 200px;
+}
+
+#album-hader #left img {
+  width: 100%;
+}
+
+#album-hader #right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 20px;
+  width: 75%;
+}
+#album-hader #right #type {
+  text-transform: uppercase;
+}
+#album-hader #right h1 {
+  font-size: 5rem;
+  margin-bottom: 7px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#album-hader #right p {
+  margin-bottom: 7px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1060px) {
+  #album-hader #right h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #album-hader #right h1 {
+    font-size: 3rem;
+  }
+}
+
+#controls {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+}
+
+#controls #album-like-button i {
+  font-size: 30px;
+  color: #1db954;
+  margin-left: 40px;
+}
+
+#album-options-button i {
+  margin-left: 25px;
+}

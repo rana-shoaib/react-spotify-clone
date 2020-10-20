@@ -1,0 +1,44 @@
+#add-to-palylist-model {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 999;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#add-to-palylist-model #hader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#add-to-palylist-model #hader h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+#add-to-palylist-model #hader button {
+  width: 200px;
+  height: 42px;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+  background-color: #1ed760;
+  text-transform: uppercase;
+}
+#add-to-palylist-model #hader button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+#add-to-palylist-model #palylist-container {
+  width: 100vw;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,160 @@
+#nowplayingBarContainer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  min-height: 100px;
+  display: flex;
+  background-color: #282828;
+  z-index: 999;
+  min-width: 700px;
+}
+#nowplayingBarLeft,
+#nowplayingBarRight {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+#nowplayingBarLeft {
+  position: relative;
+}
+#nowplayingBarLeft div {
+  width: 95%;
+}
+#nowplayingBarRight {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+#likeSongButton {
+  position: absolute;
+  left: 80%;
+  padding-left: 20px;
+  bottom: 2.7vh;
+  color: #b3b3b3;
+  font-size: 20px;
+  cursor: pointer;
+}
+#nowplayingBarCenter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nowplayingSonAlbumArtwork {
+  width: 80px;
+  height: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#nowPlayingSongTittle,
+#nowPlayingSongAlbumName {
+  height: 1.3rem;
+  overflow: hidden;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 50%;
+}
+.controlIcon {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-right: 27px;
+  cursor: pointer;
+}
+#songControlsConatiner {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+#songTimeBarContainer {
+  background-color: #535353;
+  width: 90%;
+  height: 4px;
+  cursor: pointer;
+  position: relative;
+}
+#songTimeBar {
+  background-color: #b3b3b3;
+  width: 50px;
+  height: 4px;
+}
+#songTimeBarCircle,
+#circle {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  display: none;
+  margin-left: -6px;
+}
+#songTimeBarContainer:hover #songTimeBarCircle,
+#volumeBarContainer:hover #circle {
+  display: block;
+}
+#songTimeBarContainer:hover #songTimeBar {
+  background-color: #1db954;
+}
+#songCurrentTime {
+  margin-right: 6px;
+  font-size: 14px;
+}
+#songTotalTime {
+  margin-left: 6px;
+  font-size: 14px;
+}
+#play,
+#pause {
+  font-size: 30px;
+}
+#pause {
+  display: none;
+}
+
+#volumeBarContainer {
+  cursor: pointer;
+  width: 70px;
+  height: 4px;
+  max-width: 100px;
+  min-width: 60px;
+  background-color: #535353;
+  position: relative;
+}
+#volumeBar {
+  height: 4px;
+  background-color: #b3b3b3;
+}
+#volumeBarContainer:hover #volumeBar {
+  background-color: #1db954;
+}
+#volumeDown,
+#volumeMute,
+#volumeZero {
+  display: none;
+}
+#loading-indicator {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border: 4px solid transparent;
+  border-top: 3px solid #ffffff;
+  animation: loading 1s linear infinite;
+  margin-right: -38px;
+  z-index: -1;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

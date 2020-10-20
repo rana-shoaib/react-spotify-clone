@@ -1,0 +1,124 @@
+body {
+  overflow: auto !important;
+}
+.register-main-container {
+  display: flex;
+}
+.register-main-container .right,
+.register-main-container .left {
+  width: 50vw;
+  height: 100vh;
+}
+.register-main-container .right {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1db954;
+}
+.register-main-container .right img {
+  width: 60%;
+  height: auto;
+}
+.register-main-container .left {
+  padding-top: 35px;
+  background-color: #191414;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 50vw;
+  /* height: 150vh;
+  overflow: auto; */
+}
+.register-main-container .left .button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#activate-signup-form,
+#activate-login-form {
+  cursor: pointer;
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #1db954;
+}
+
+#activate-login-form {
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#activate-signup-form {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+#activate-login-form.active,
+#activate-signup-form.active {
+  background-color: #1db954;
+  color: #ffffff;
+}
+#SignupForm,
+#loginForm {
+  margin-top: 20px;
+  display: none;
+  width: 45vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#SignupForm p,
+#loginForm p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(275, 275, 275, 0.9);
+  width: 90%;
+}
+#loginForm a {
+  margin-top: 20px;
+}
+
+#SignupForm input,
+#loginForm input {
+  width: 90%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: rgba(275, 275, 275, 0.9);
+  border-bottom: 1px solid rgba(275, 275, 275, 0.4);
+}
+#SignupForm .show-error,
+#loginForm .show-error {
+  color: red;
+  width: 90%;
+}
+#SignupForm .signup-button,
+#loginForm .login-button {
+  width: 25vw;
+  height: 45px;
+  margin-top: 30px;
+  min-width: 200px;
+}
+@media only screen and (max-width: 800px) {
+  .register-main-container .left {
+    width: 100%;
+
+    margin: 0px;
+  }
+  .register-main-container .right {
+    position: absolute;
+    display: none;
+  }
+  #SignupForm,
+  #loginForm {
+    width: 95vw;
+  }
+  #activate-signup-form,
+  #activate-login-form {
+    width: 45%;
+    max-width: 200px;
+  }
+}
