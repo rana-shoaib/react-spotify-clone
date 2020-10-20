@@ -2,7 +2,11 @@
 
 # dependencies
 /node_modules
+/.firebase
 /.pnp
+/.vscode
+*.firebaserc
+/firebase.json
 .pnp.js
 
 # testing
