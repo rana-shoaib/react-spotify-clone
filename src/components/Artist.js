@@ -61,8 +61,6 @@ function Artist({ match }) {
         artist={artistInfo.id}
         img={artistInfo.img}
         isRoundedImg={true}
-        // likes={album.likes}
-        // img={album.artPath}
         key={artistInfo.id}
         songsList={song}
         albumId={99}
