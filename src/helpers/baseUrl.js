@@ -1,2 +1,2 @@
-const BASE_URL = "http://spotify-clone-backend.000.pe/";
+const BASE_URL = "https://spotify-clone-backend.000.pe/";
 export default BASE_URL;
