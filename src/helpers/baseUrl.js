@@ -1,2 +1,2 @@
-const BASE_URL = "https://spinous-texts.000webhostapp.com/";
+const BASE_URL = "http://spotify-clone-backend.000.pe/";
 export default BASE_URL;
